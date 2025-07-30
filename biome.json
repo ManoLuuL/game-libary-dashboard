@@ -1,132 +1,125 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.1.3/schema.json",
-	"files": {
-		"includes": [
-			"**",
-			"!**/.gitignore",
-			"!**/bun.lockb",
-			"!**/dist",
-			"!**/src/**/*.svg",
-			"!**/node_modules"
-		],
-		"ignoreUnknown": true
-	},
-	"formatter": {
-		"enabled": true,
-		"formatWithErrors": false,
-		"indentStyle": "space",
-		"indentWidth": 2,
-		"lineEnding": "lf",
-		"lineWidth": 120,
-		"attributePosition": "auto"
-	},
-	"assist": {
-		"actions": {
-			"source": {
-				"organizeImports": "off"
-			}
-		}
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true,
-			"a11y": {
-				"useKeyWithClickEvents": "off",
-				"noAutofocus": "off",
-				"noSvgWithoutTitle": "off",
-				"useValidAriaValues": "info",
-				"noStaticElementInteractions": "off",
-				"useSemanticElements": "off",
-				"useFocusableInteractive": "off"
-			},
-			"correctness": {
-				"noUndeclaredVariables": "error",
-				"noUnusedVariables": "error",
-				"useHookAtTopLevel": "error",
-				"noNodejsModules": "error",
-				"noUnusedImports": "error",
-				"noInvalidBuiltinInstantiation": "error",
-				"useExhaustiveDependencies": "error",
-				"noUnreachable": "warn"
-			},
-			"complexity": {
-				"noUselessCatch": "error",
-				"useSimplifiedLogicExpression": "error",
-				"noUselessFragments": "warn",
-				"noUselessStringConcat": "warn",
-				"noUselessSwitchCase": "warn",
-				"noUselessConstructor": "warn",
-				"noUselessContinue": "warn",
-				"noUselessEmptyExport": "error",
-				"noUselessTernary": "info",
-				"noUselessRename": "info",
-				"noUselessUndefinedInitialization": "info",
-				"useOptionalChain": "info"
-			},
-			"nursery": {
-				"useSortedClasses": "on"
-			},
-			"performance": {
-				"noBarrelFile": "error",
-				"noReExportAll": "error"
-			},
-			"style": {
-				"noDescendingSpecificity": "off",
-				"useBlockStatements": "error",
-				"noImplicitBoolean": "error",
-				"noNegationElse": "error",
-				"useCollapsedElseIf": "error",
-				"useFilenamingConvention": {
-					"level": "error",
-					"options": {
-						"filenameCases": ["kebab-case"]
-					}
-				},
-				"useForOf": "error",
-				"useImportType": "warn",
-				"useShorthandAssign": "error",
-				"noParameterAssign": "error",
-				"useAsConstAssertion": "error",
-				"useDefaultParameterLast": "error",
-				"useEnumInitializers": "error",
-				"useSelfClosingElements": "error",
-				"useSingleVarDeclarator": "error",
-				"noUnusedTemplateLiteral": "error",
-				"useNumberNamespace": "error",
-				"noInferrableTypes": "error",
-				"noUselessElse": "error",
-				"useArrayLiterals": "error",
-				"useConsistentArrayType": {
-					"level": "off",
-					"options": { "syntax": "shorthand" }
-				}
-			},
-			"suspicious": {
-				"noMisleadingCharacterClass": "off",
-				"noShadowRestrictedNames": "off",
-				"noEmptyBlockStatements": "error",
-				"useAwait": "error",
-				"noArrayIndexKey": "off",
-				"noConsole": "error"
-			},
-			"security": {
-				"noBlankTarget": "error"
-			}
-		}
-	},
-	"javascript": {
-		"globals": ["$", "_", "externalVariable", "JSX", "React"],
-		"formatter": {
-			"jsxQuoteStyle": "single",
-			"quoteProperties": "asNeeded",
-			"trailingCommas": "all",
-			"semicolons": "always",
-			"arrowParentheses": "always",
-			"bracketSpacing": true,
-			"bracketSameLine": false,
-			"quoteStyle": "single",
-			"attributePosition": "multiline"
-		}
-	}
+  "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+  "files": {
+    "includes": ["**", "!**/.gitignore", "!**/bun.lockb", "!**/dist", "!**/src/**/*.svg", "!**/node_modules"],
+    "ignoreUnknown": true
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 120,
+    "attributePosition": "auto"
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "off"
+      }
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "useKeyWithClickEvents": "off",
+        "noAutofocus": "off",
+        "noSvgWithoutTitle": "off",
+        "useValidAriaValues": "info",
+        "noStaticElementInteractions": "off",
+        "useSemanticElements": "off",
+        "useFocusableInteractive": "off"
+      },
+      "correctness": {
+        "noUndeclaredVariables": "error",
+        "noUnusedVariables": "error",
+        "useHookAtTopLevel": "error",
+        "noNodejsModules": "error",
+        "noUnusedImports": "error",
+        "noInvalidBuiltinInstantiation": "error",
+        "useExhaustiveDependencies": "error",
+        "noUnreachable": "warn"
+      },
+      "complexity": {
+        "noUselessCatch": "error",
+        "useSimplifiedLogicExpression": "error",
+        "noUselessFragments": "warn",
+        "noUselessStringConcat": "warn",
+        "noUselessSwitchCase": "warn",
+        "noUselessConstructor": "warn",
+        "noUselessContinue": "warn",
+        "noUselessEmptyExport": "error",
+        "noUselessTernary": "info",
+        "noUselessRename": "info",
+        "noUselessUndefinedInitialization": "info",
+        "useOptionalChain": "info"
+      },
+      "nursery": {
+        "useSortedClasses": "on"
+      },
+      "performance": {
+        "noBarrelFile": "error",
+        "noReExportAll": "error"
+      },
+      "style": {
+        "noDescendingSpecificity": "off",
+        "useBlockStatements": "error",
+        "noImplicitBoolean": "error",
+        "noNegationElse": "error",
+        "useCollapsedElseIf": "error",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "filenameCases": ["kebab-case"]
+          }
+        },
+        "useForOf": "error",
+        "useImportType": "warn",
+        "useShorthandAssign": "error",
+        "noParameterAssign": "error",
+        "useAsConstAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "noUselessElse": "error",
+        "useArrayLiterals": "error",
+        "useConsistentArrayType": {
+          "level": "off",
+          "options": { "syntax": "shorthand" }
+        }
+      },
+      "suspicious": {
+        "noMisleadingCharacterClass": "off",
+        "noShadowRestrictedNames": "off",
+        "noEmptyBlockStatements": "error",
+        "useAwait": "error",
+        "noArrayIndexKey": "off",
+        "noConsole": "error"
+      },
+      "security": {
+        "noBlankTarget": "error"
+      }
+    }
+  },
+  "javascript": {
+    "globals": ["$", "_", "externalVariable", "JSX", "React"],
+    "formatter": {
+      "jsxQuoteStyle": "single",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "multiline"
+    }
+  }
 }
