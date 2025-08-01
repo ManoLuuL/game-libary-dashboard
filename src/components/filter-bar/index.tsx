@@ -4,12 +4,12 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-import { useGenres, usePlatforms } from '../hooks/useGames';
 import type { FilterBarProps } from './types';
 import { getSelectedGenreName } from './utils/get-selected-genre-name';
 import { getOrderingLabel } from './utils/get-ordering-label';
 import { getSelectedPlatformName } from './utils/get-selected-platform-name';
 import { FilterBarTrigger } from './components/filter-bar-trigger';
+import { useGenres, usePlatforms } from '@/globals/hooks/use-games';
 
 const FilterBar = (props: FilterBarProps) => {
   const { filters, onFiltersChange } = props;

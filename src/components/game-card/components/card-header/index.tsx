@@ -1,4 +1,4 @@
-import { getRatingColor } from '../../utils/get-rating-color';
+import { getRatingColor } from '../../../../globals/utils/get-rating-color';
 import { GameMetric } from '../game-metric';
 import { GameRating } from '../game-rating';
 import { LazyLoadImage } from 'react-lazy-load-image-component';

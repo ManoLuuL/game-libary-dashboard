@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Moon, Sun, Gamepad2, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useTheme } from '../contexts/ThemeContext';
-import { useFavorites } from '../contexts/FavoritesContext';
 import { HeaderNavBar } from './components/header-nav-bar';
+import { useTheme } from '@/globals/contexts/theme-context';
+import { useFavorites } from '@/globals/contexts/favorites-context';
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme();

@@ -1,17 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ThemeProvider } from './contexts/ThemeContext';
-import { FavoritesProvider } from './contexts/FavoritesContext';
-import HomePage from './pages/HomePage';
-import GameDetailsPage from './pages/GameDetailsPage';
-import FavoritesPage from './pages/FavoritesPage';
 import Header from './components/header';
+import FavoritesPage from './pages/favorites-page';
+import HomePage from './pages/home-page';
+import { ThemeProvider } from './globals/contexts/theme-context';
+import { FavoritesProvider } from './globals/contexts/favorites-context';
+import GameDetailsPage from './pages/game-details-page';
 
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: 5 * 60 * 1000,
-      cacheTime: 10 * 60 * 1000,
     },
   },
 });

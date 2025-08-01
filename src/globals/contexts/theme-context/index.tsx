@@ -1,5 +1,5 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
-import type { Theme, ThemeContextType } from './types';
+import { createContext, useContext, useEffect, useState } from 'react';
+import type { Theme, ThemeContextType, ThemeProviderProps } from './types';
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
@@ -11,8 +11,8 @@ export const useTheme = () => {
   return context;
 };
 
-export const ThemeProvider = (params: { children: ReactNode }) => {
-  const { children } = params;
+export const ThemeProvider = (props: ThemeProviderProps) => {
+  const { children } = props;
 
   const [theme, setTheme] = useState<Theme>(() => {
     const savedTheme = localStorage.getItem('theme') as Theme;

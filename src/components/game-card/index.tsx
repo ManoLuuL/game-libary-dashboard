@@ -4,12 +4,12 @@ import { Calendar, Gamepad2 } from 'lucide-react';
 import { m } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
-import { useFavorites } from '../contexts/FavoritesContext';
 import type { GameCardProps } from './types';
 import { CardHeader } from './components/card-header';
-import { formatReleaseDate } from './utils/format-release-date';
+import { formatReleaseDate } from '../../globals/utils/format-release-date';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
+import { useFavorites } from '@/globals/contexts/favorites-context';
 
 const GameCard = (props: GameCardProps) => {
   const { game, index = 0 } = props;
